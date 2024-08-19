@@ -30,7 +30,12 @@
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:text="@string/contains_ergast_data_from_public_rest_api" />
-
+        <TextView
+            android:id="@+id/rawDataDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/raw_data_is_displayed_here"
+            android:textSize="20sp" />
         <TextView
             android:id="@+id/lastUpdated"
             android:layout_width="match_parent"

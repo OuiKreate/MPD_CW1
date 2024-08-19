@@ -26,6 +26,13 @@
             android:layout_height="wrap_content"
             android:text="@string/raw_data_is_displayed_here"
             android:textSize="20sp" />
+        <TextView
+            android:id="@+id/lastUpdated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Last updated: N/A" />
+
 
         <Button
             android:id="@+id/startButton"
@@ -36,7 +43,8 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:layout_marginTop="16dp"/>
 </LinearLayout>
     <!-- S2339266 -->

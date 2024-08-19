@@ -5,7 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView; // Import this for RecyclerView
 import java.util.List;
 
 public class DriverStandingAdapter extends RecyclerView.Adapter<DriverStandingAdapter.ViewHolder> {
@@ -19,8 +19,7 @@ public class DriverStandingAdapter extends RecyclerView.Adapter<DriverStandingAd
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.driver_standing_item, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.driver_standing_item, parent, false);
         return new ViewHolder(view);
     }
 
@@ -53,4 +52,3 @@ public class DriverStandingAdapter extends RecyclerView.Adapter<DriverStandingAd
         }
     }
 }
-//S2339266
