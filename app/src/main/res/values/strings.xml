@@ -5,4 +5,5 @@
     <string name="raw_data_is_displayed_here">Raw Data is Displayed here</string>
     <string name="press_to_get_data">Press to get data</string>
     <string name="last_updated_n_a">Last Updated: N/A</string>
+    <string name="driver_name_format">%1$s %2$s</string>
 </resources>
