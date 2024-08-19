@@ -3,7 +3,13 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:padding="8dp">
-
+    <TextView
+        android:id="@+id/driverName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Driver Name"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"/>
     <TextView
         android:id="@+id/positionTextView"
         android:layout_width="0dp"

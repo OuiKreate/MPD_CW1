@@ -1,50 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- MPD XML Starter code - main diet 2023-2024 -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="16dp">
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/salutation"
+        <!-- Main content layout -->
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/welcome_to_mobile_platform_development"
-            android:textSize="20sp" />
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
 
-        <TextView
-            android:id="@+id/acknowledgement"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/contains_ergast_data_from_public_rest_api"
-            android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/salutation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/welcome_to_mobile_platform_development"
+                    android:textSize="20sp" />
 
-        <TextView
-            android:id="@+id/rawDataDisplay"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/raw_data_is_displayed_here"
-            android:textSize="20sp" />
-        <TextView
-            android:id="@+id/lastUpdated"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:text="Last updated: N/A" />
+                <TextView
+                    android:id="@+id/acknowledgement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contains_ergast_data_from_public_rest_api"
+                    android:textSize="20sp" />
 
+                <TextView
+                    android:id="@+id/rawDataDisplay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/raw_data_is_displayed_here"
+                    android:textSize="20sp" />
 
-        <Button
-            android:id="@+id/startButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/press_to_get_data" />
-    
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:layout_marginTop="16dp"/>
-</LinearLayout>
+                <TextView
+                    android:id="@+id/lastUpdated"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Last updated: N/A" />
+
+                <Button
+                    android:id="@+id/startButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/press_to_get_data" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="16dp"/>
+        </LinearLayout>
+
+        <!-- Navigation drawer -->
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:menu="@menu/drawer_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
     <!-- S2339266 -->

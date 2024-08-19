@@ -14,7 +14,7 @@
         android:textSize="16sp" />
 
     <TextView
-        android:id="@+id/nameTextView"
+        android:id="@+id/driverName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="2"
@@ -22,7 +22,7 @@
         android:textSize="16sp" />
 
     <TextView
-        android:id="@+id/pointsTextView"
+        android:id="@+id/driverPoints"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -30,7 +30,7 @@
         android:textSize="16sp" />
 
     <TextView
-        android:id="@+id/winsTextView"
+        android:id="@+id/driverWins"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
