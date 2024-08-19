@@ -1,40 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- MPD XML Starter code - main diet 2023-2024 -->
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:orientation="vertical">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
 
         <TextView
             android:id="@+id/salutation"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Welcome to Mobile Platform Development"
+            android:text="@string/welcome_to_mobile_platform_development"
             android:textSize="20sp" />
 
         <TextView
             android:id="@+id/acknowledgement"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Contains Ergast data from public REST API"
+            android:text="@string/contains_ergast_data_from_public_rest_api"
             android:textSize="20sp" />
 
         <TextView
             android:id="@+id/rawDataDisplay"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Raw Data is Displayed here"
+            android:text="@string/raw_data_is_displayed_here"
             android:textSize="20sp" />
 
         <Button
             android:id="@+id/startButton"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Press to get data" />
-    </LinearLayout>
-</ScrollView>
+            android:text="@string/press_to_get_data" />
+    
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"/>
+</LinearLayout>
     <!-- S2339266 -->

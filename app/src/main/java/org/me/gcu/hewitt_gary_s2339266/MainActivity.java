@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity implements OnClickListener
     private TextView rawDataDisplay;
     private TextView lastUpdated;
     private Button startButton;
-    private String result;
     private String urlSource="http://ergast.com/api/f1/current/driverStandings";
 
     @Override
@@ -48,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         // Set up the raw links to the graphical components
-        rawDataDisplay = (TextView)findViewById(R.id.rawDataDisplay);
+        rawDataDisplay = findViewById(R.id.rawDataDisplay);
         lastUpdated = findViewById(R.id.lastUpdated); //s2339266
         startButton = (Button)findViewById(R.id.startButton);
         startButton.setOnClickListener(this);
@@ -56,6 +55,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener
 
     public void onClick(View v)
     {
+
         startProgress();
     }
 

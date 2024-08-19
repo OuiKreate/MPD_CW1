@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Hewitt_Gary_S2339266</string>
+    <string name="welcome_to_mobile_platform_development">Welcome to Mobile Platform Development</string>
+    <string name="contains_ergast_data_from_public_rest_api">Contains Ergast data from public REST API</string>
+    <string name="raw_data_is_displayed_here">Raw Data is Displayed here</string>
+    <string name="press_to_get_data">Press to get data</string>
+    <string name="last_updated_n_a">Last Updated: N/A</string>
 </resources>
